@@ -1,6 +1,9 @@
 require "bundler/capistrano"
+#require "rvm/capistrano"
 set :application, "rd-920_tracking"
 set :repository,  "git://github.com/bsherman26/rd-920_tracking.git"
+#set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"") # Read from local system
+#set :rvm_ruby_string "1.9.3"
 
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
