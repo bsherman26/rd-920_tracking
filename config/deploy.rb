@@ -1,3 +1,4 @@
+require "bundler/capistrano"
 set :application, "rd-920_tracking"
 set :repository,  "git://github.com/bsherman26/rd-920_tracking.git"
 
