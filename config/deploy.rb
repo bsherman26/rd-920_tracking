@@ -19,6 +19,9 @@ role :db,  "basileis.com", :primary => true        # This is where Rails migrati
 
 default_run_options[:pty] = true                   # I had to add this so it would prompt for a password
 
+# Link the folder specified in config.assets.prefix to shared/assets
+load 'deploy/assets'
+
 # if you want to clean up old releases on each deploy uncomment this:
 # after "deploy:restart", "deploy:cleanup"
 
